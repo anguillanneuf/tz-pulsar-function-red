@@ -1,3 +1,0 @@
-name: red-function
-description: my first Pulsar function
-functionClass: org.example.red.RedFunction
