@@ -1,0 +1,3 @@
+name: red-function
+description: My first function
+functionClass: org.apache.pulsar.functions.api.examples.RedFunction
