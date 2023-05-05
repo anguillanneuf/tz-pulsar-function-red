@@ -5,13 +5,14 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>org.example</groupId>
-  <artifactId>tz-pulsar-function-red</artifactId>
+  <artifactId>tz-pulsar-functions</artifactId>
   <version>1.0-SNAPSHOT</version>
 
   <properties>
     <maven.compiler.source>17</maven.compiler.source>
     <maven.compiler.target>17</maven.compiler.target>
     <pulsar.version>2.11.0</pulsar.version>
+    <nifi.nar.plugin.version>1.2.0</nifi.nar.plugin.version>
   </properties>
 
   <dependencies>
@@ -68,6 +69,25 @@
         <configuration>
           <release>17</release>
         </configuration>
+      </plugin>
+      <!-- package -->
+      <plugin>
+        <groupId>org.apache.nifi</groupId>
+        <artifactId>nifi-nar-maven-plugin</artifactId>
+        <version>${nifi.nar.plugin.version}</version>
+        <extensions>true</extensions>
+        <configuration>
+          <finalName>${project.artifactId}-${project.version}</finalName>
+        </configuration>
+        <executions>
+          <execution>
+            <id>default-nar</id>
+            <phase>package</phase>
+            <goals>
+              <goal>nar</goal>
+            </goals>
+          </execution>
+        </executions>
       </plugin>
     </plugins>
   </build>
