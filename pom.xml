@@ -6,7 +6,7 @@
 
   <groupId>org.example</groupId>
   <artifactId>tz-pulsar-functions</artifactId>
-  <version>1.0-SNAPSHOT</version>
+  <version>1.1-SNAPSHOT</version>
 
   <properties>
     <maven.compiler.source>17</maven.compiler.source>
@@ -48,7 +48,7 @@
           </descriptorRefs>
           <archive>
             <manifest>
-              <mainClass>org.apache.pulsar.functions.api.examples.RedFunction</mainClass>
+              <mainClass>org.examples.RedFunction</mainClass>
             </manifest>
           </archive>
         </configuration>

@@ -1,4 +1,4 @@
-package org.apache.pulsar.functions.api.examples;
+package org.examples;
 
 import static org.junit.jupiter.api.Assertions.*;
 

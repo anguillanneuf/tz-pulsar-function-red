@@ -1,4 +1,4 @@
-package org.apache.pulsar.functions.api.examples;
+package org.examples;
 
 import org.apache.pulsar.functions.api.Context;
 import org.apache.pulsar.functions.api.Function;

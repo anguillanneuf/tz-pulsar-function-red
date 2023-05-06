@@ -1,8 +1,8 @@
 tenant: "public"
 namespace: "default"
 name: "red-function"
-className: "org.apache.pulsar.functions.api.examples.RedFunction"
-inputs: ["input_topic"]
-output: "output_topic"
+className: "org.examples.RedFunction"
+inputs: ["red_input"]
+output: "red_output"
 autoAck: true
 parallelism: 1
