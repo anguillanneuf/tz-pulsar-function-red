@@ -27,11 +27,11 @@ Use the [Extended Pulsar Functions SDK for Java][1] to create my first Pulsar Fu
    
    # alternatively
    $ bin/pulsar-admin functions localrun \
-     --inputs persistent://public/default/red_input \
-     --output persistent://public/default/red_output \
-     --jar /home/tz/apache-pulsar-2.11.0/examples/examples/tz-pulsar-functions-1.1-SNAPSHOT.nar \
-     --classname org.examples.RedFunction \
-     --name red-function
+       --inputs persistent://public/default/red_input \
+       --output persistent://public/default/red_output \
+       --jar /home/tz/apache-pulsar-2.11.0/examples/tz-pulsar-functions-1.1-SNAPSHOT.nar \
+       --classname org.examples.RedFunction \
+       --name red-function
    ```
    Alternatively, test it without a running Pulsar cluster as described [here][4].
 6. In a second terminal, start listening to the output topic.
