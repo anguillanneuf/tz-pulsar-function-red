@@ -54,7 +54,7 @@ Use the [Extended Pulsar Functions SDK for Java][1] to create my first Pulsar Fu
    $ bin/pulsar-admin topics delete persistent://public/default/${FUNCTION_NAME}
    
    # stop standalone cluster
-   $ bin/pulsar-daemon start standalone
+   $ bin/pulsar-daemon stop standalone
    ```
 
 ## Run in Docker
@@ -86,6 +86,11 @@ Use the [Extended Pulsar Functions SDK for Java][1] to create my first Pulsar Fu
    
    $ bin/pulsar-admin functions status --tenant public --namespace default --name red-function
    
+   # if the function already exists
+   $ bin/pulsar-admin functions list --tenant public --namespace default
+   $ bin/pulsar-admin functions stop --tenant public --namespace default --name red-function
+   $ bin/pulsar-admin functions start --tenant public --namespace default --name red-function
+   
    $ bin/pulsar-admin functions trigger \
     --tenant public \
     --namespace default \
@@ -105,6 +110,9 @@ Use the [Extended Pulsar Functions SDK for Java][1] to create my first Pulsar Fu
    ```
 5. Cleanup.
    ```shell
+    # stop function
+   $ bin/pulsar-admin functions stop red-function --tenant public --namespace default
+   
    # delete function
    $ bin/pulsar-admin functions delete red-function --tenant public --namespace default
    
