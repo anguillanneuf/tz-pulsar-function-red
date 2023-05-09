@@ -151,6 +151,10 @@ Use the [Extended Pulsar Functions SDK for Java][1] to create my first Pulsar Fu
    ```
 2. Run `mvn clean package -DskipTests=True` to obtain `/target/tz-pulsar-functions-${VERSION}-SNAPSHOT.nar`.
 
+# Unit test
+
+Run `mvn clean test`.
+
 [1]: https://pulsar.apache.org/docs/2.11.x/functions-develop-api/#use-extended-sdk-for-java
 [2]: https://pulsar.apache.org/docs/2.11.x/functions-develop-tutorial/
 [3]: https://pulsar.apache.org/docs/2.11.x/functions-debug-unit-test/
