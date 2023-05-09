@@ -6,7 +6,7 @@ Use the [Extended Pulsar Functions SDK for Java][1] to create my first Pulsar Fu
 1. Write a Pulsar Function based on a provided examples in the [tutorial][2].
 2. Write a unit test according to the [tutorial][3].
 3. Run the unit test with `mvn clean test`.
-4. Package the function with `mvn clean install -DskipTest=True`.
+4. Package the function with `mvn clean package -DskipTest=True`.
 5. Test the function using `localrun` after starting up a standalone cluster locally.
    ```bash
    $ bin/pulsar-daemon start standalone
