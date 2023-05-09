@@ -111,10 +111,10 @@ Use the [Extended Pulsar Functions SDK for Java][1] to create my first Pulsar Fu
 5. Cleanup.
    ```shell
     # stop function
-   $ bin/pulsar-admin functions stop red-function --tenant public --namespace default
+   $ bin/pulsar-admin functions stop --tenant public --namespace default --name red-function
    
    # delete function
-   $ bin/pulsar-admin functions delete red-function --tenant public --namespace default
+   $ bin/pulsar-admin functions delete --tenant public --namespace default --name red-function
    
    # delete package
    $ bin/pulsar-admin packages delete function://public/default/red-function@0
